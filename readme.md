@@ -4,6 +4,6 @@
 
 #### HTML
 
-https://a775691134.github.io/blog/
 
-[基础HTML](https://a775691134.github.io/blog/HTML/基础HTML.md)
+
+[基础HTML](https://github.com/a775691134/blog/blob/master/HTML/%E5%9F%BA%E7%A1%80HTML.md)
