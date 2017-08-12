@@ -49,6 +49,8 @@
 
 [Array](https://github.com/a775691134/blog/blob/master/进阶/Array.md)
 
+[Date](https://github.com/a775691134/blog/blob/master/进阶/Date.md)
+
 
 ### 特效
 [弹出层](https://github.com/a775691134/blog/blob/master/特效/弹出层.md)
