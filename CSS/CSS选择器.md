@@ -2,19 +2,19 @@
 id定位到页面中唯一的一个元素，class定位到页面中的某一类具有共同特征的元素。
 
 #### CSS选择器常见的有几种?
-四种，分别是：<strong>*</strong>，<strong>#id</strong>，<strong>.class</strong>，<strong>element</strong>
+四种，分别是：**\***，**#id**，**.class**，**element**
 
 
 #### 选择器的优先级是怎样的?对于复杂场景如何计算优先级？
-<strong>!import引入的选择器</strong>
-<strong>作为style属性写在元素标签上的内联样式</strong>
-<strong>id选择器</strong>
-<strong>类选择器</strong>
-<strong>伪类选择器</strong>
-<strong>属性选择器</strong>
-<strong>标签选择器</strong>
-<strong>通配符选择器</strong>
-<strong>浏览器自定义</strong>
+**!import引入的选择器**
+**作为style属性写在元素标签上的内联样式**
+**id选择器**
+**类选择器**
+**伪类选择器**
+**属性选择器**
+**标签选择器**
+**通配符选择器**
+**浏览器自定义
 同级当中写在后面的选择的优先级大于写在前面的选择器
 
 #### a:link, a:hover, a:active, a:visited 的顺序是怎样的？ 为什么？
@@ -59,13 +59,13 @@ e:nth-last-child(n)     匹配到父元素倒数第几个子元素，从1开始
 e:first-of-type          匹配到父元素中第一个与该元素拥有相同class的相同元素
 
 #### div:first-child、div:first-of-type、div :first-child和div :first-of-type的作用和区别 （注意空格的作用）
-<strong>div:first-child</strong>：  同级元素中第一个且为div 的元素
-<strong>div:first-of-type</strong>：选择div所在的父元素的第一个跟这个div拥有相同class的第一个子元素
-<strong>div :first-child</strong>：
+**div:first-child**：  同级元素中第一个且为div 的元素
+**div:first-of-type**：选择div所在的父元素的第一个跟这个div拥有相同class的第一个子元素
+**div :first-child**：
 ![1.png](http://upload-images.jianshu.io/upload_images/5290967-a5b0fd99f5f11d88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 在1.png中可以看出`1.png`不仅在div上找到其所在父元素的第一个子元素，在div的子元素中也生效。
 所以`div :first-child`的作用是找到div所在父元素中第一个子元素和div中的第一个子元素
-<strong>:first-of-type</strong>：
+**:first-of-type**：
 ![2.png](http://upload-images.jianshu.io/upload_images/5290967-3405649569427419.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 选择所有标签。
 #### 运行如下代码，解析下输出样式的原因。

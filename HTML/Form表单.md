@@ -1,7 +1,6 @@
 #### form表单有什么作用？有哪些常用的input 标签，分别有什么作用？
-<strong>作用：</strong>收集用户填写的信息提交给网站后台
-<strong></strong>
-<strong>常用input标签与其作用：</strong>
+**作用：**收集用户填写的信息提交给网站后台
+**常用input标签与其作用：**
 ```
 type='text'   //普通输入框
 type='password'  //密码输入框
