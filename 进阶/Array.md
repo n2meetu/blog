@@ -1,4 +1,4 @@
-#### 数组方法里push、pop、shift、unshift、join、splice分别是什么作用？用 splice函数分别实现push、pop、shift、unshift方法
+#### 数组方法里push、pop、shift、unshift、join、splice分别是什么作用？
 **push** 
 - 参数：不限个数
 - 将每个参数插入到数组的末尾
@@ -13,7 +13,7 @@ console.log(arr)  //[1,2,3,4]
 **pop** 
 - 无传入参数
 - 在指定数组的末尾删除一个元素
-- 返回值为指定数组的末尾元素
+- 返回值为指定数组后数组的长度
 - 例如
 ```
 var arr = [1,2,3,4]
@@ -32,7 +32,7 @@ console.log(arr.unshift(-1,0)) //6
 console.log(arr)  //[-1,0,1,2,3,4]
 ```
 
-**unshift** 
+**shift** 
 - 无传入参数
 - 在指定数组的头部删除一个元素
 - 返回值为取出的元素
@@ -85,8 +85,52 @@ var arr = [1,2,3,4,5]
 console.log(arr.splice(0,3,'x','y','z')) //[1,2,3]
 console.log(arr)  //['x','y','z',4,5]
 ```
+#### 用 splice函数分别实现push、pop、shift、unshift方法
+```
+function push (arr){
+    for(var i=1;i<arguments.length;i++){
+        arr.splice(arr.length,0,arguments[i])
+    }
+    return arr.length
+}
+var arr = [1,2,3,4]
+console.log(push(arr,5,6,7))  //7
+console.log(arr)  //[1,2,3,4,5,6,7]
+```
 
+```
+function pop (arr){
+    var last = arr[arr.length-1]
+    arr[arr.length-1] = undefined
+    arr.length --
+    return last
+}
+var arr = [1,2,3,4]
+console.log(pop(arr)) //4
+console.log(arr) //[1,2,3]
+```
 
+```
+console.log('--------------')
+function unshift(arr){
+    for(var i=arguments.length-1;i>0;i--){
+        arr.splice(0,0,arguments[i])    
+    }
+    return void(0)
+}
+var arr = [1,2,3,4]
+console.log(unshift(arr,-1,0)) //6
+console.log(arr)  //[-1,0,1,2,3,4]
+```
+
+```
+function shift (arr){
+    var head = arr.splice(0,1).toString()
+    return head
+}
+console.log(shift(arr)) //1
+console.log(arr)  //[2,3,4]
+```
 
 #### 写一个函数，操作数组，数组中的每一项变为原来的平方，在原数组上操作
 ```
