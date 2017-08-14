@@ -11,6 +11,7 @@
 
 [HTML速查列表](https://github.com/a775691134/blog/blob/master/HTML/HTML速查列表.md)
 
+---
 
 #### CSS
 [CSS基础](https://github.com/a775691134/blog/blob/master/CSS/CSS基础.md)
@@ -27,12 +28,14 @@
 
 [浮动定位BFC边距合并](https://github.com/a775691134/blog/blob/master/CSS/浮动定位BFC边距合并.md)
 
+---
 
 #### 命令行与Github
 [命令行](https://github.com/a775691134/blog/blob/master/命令行/命令行.md)
 
 [如何使用github](https://github.com/a775691134/blog/blob/master/命令行/如何使用github.md)
 
+---
 
 ### 进阶
 [函数与作用域](https://github.com/a775691134/blog/blob/master/进阶/函数与作用域.md)
@@ -51,6 +54,11 @@
 
 [Date](https://github.com/a775691134/blog/blob/master/进阶/Date.md)
 
+[正则表达式](https://github.com/a775691134/blog/blob/master/进阶/正则表达式.md)
+
+[DOM操作](https://github.com/a775691134/blog/blob/master/进阶/DOM操作.md)
+
+---
 
 ### 特效
 [弹出层](https://github.com/a775691134/blog/blob/master/特效/弹出层.md)
