@@ -29,7 +29,6 @@ item.addEventListener('click',function(){
 
 
 #### 4：实现加载更多的功能，效果范例383，后端在本地使用server-mock来模拟数据
-```
-代码：[github地址](https://github.com/a775691134/task/tree/master/%E8%BF%9B%E9%98%B6/js%E8%BF%9B%E9%98%B6/server-mock)
-```
+- 代码：[github地址](https://github.com/a775691134/task/tree/master/%E8%BF%9B%E9%98%B6/js%E8%BF%9B%E9%98%B6/server-mock)
+
 
