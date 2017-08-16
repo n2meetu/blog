@@ -61,10 +61,9 @@
 
 [事件](https://github.com/a775691134/blog/blob/master/进阶/事件.md)
 
-
 [闭包](https://github.com/a775691134/blog/blob/master/进阶/闭包.md)
 
-
+[AJAX](https://github.com/a775691134/blog/blob/master/进阶/AJAX.md)
 
 
 
