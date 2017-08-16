@@ -21,10 +21,15 @@ var ajaxLockForItem = false
 console.log(item)
 item.addEventListener('click',function(){
     if(!ajaxLockForItem){
-        //执行AJAX请求
+        function forItemAjax()//执行AJAX请求
         ajaxLockForItem=!ajaxLockForItem
     }
 },false)
+forItemAjax(){//执行AJAXq请求
+    //....
+    //响应结束后
+    ajaxLockForItem=!ajaxLockForItem
+}
 ```
 
 
