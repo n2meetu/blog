@@ -65,7 +65,7 @@
 
 [AJAX](https://github.com/a775691134/blog/blob/master/进阶/AJAX.md)
 
-[JSONP](https://github.com/a775691134/blog/blob/master/进阶/JSONP.md)
+[JSONP](https://github.com/a775691134/blog/blob/master/进阶/jsonp.md)
 
 [跨域解决方式](https://github.com/a775691134/blog/blob/master/进阶/跨域解决方式.md)
 
