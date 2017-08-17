@@ -16,7 +16,11 @@
 - 区别：
     - jquery选择器得到的jquery对象和标准的 javascript中的document.getElementById()取得的dom对象是两种不同的对象类型。
     - 各自有不同的方法，不能混用，比如使用jquery选择器得到的对象使用原生js的方法。
-- 
+- 转化：
+    - 将JQuery对象转化为HTML对象
+        ```
+        
+        ```
 
 
 #### 3：jQuery中如何绑定事件？bind、unbind、delegate、live、on、off都有什么作用？推荐使用哪种？使用on绑定事件使用事件代理的写法？
