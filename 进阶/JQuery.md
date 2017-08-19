@@ -203,3 +203,28 @@
 
      `$('em').attr('title')`
 
+---
+
+#### 8.效果：
+- [预览地址](https://a775691134.github.io/task/进阶/js进阶/JQuery/demo1.html)
+- [代码地址](https://github.com/a775691134/task/blob/master/%E8%BF%9B%E9%98%B6/js%E8%BF%9B%E9%98%B6/JQuery/demo1.html)
+
+---
+
+#### 9.效果：
+- [预览地址](https://a775691134.github.io/task/进阶/js进阶/JQuery/demo2.html)
+- [代码地址](https://github.com/a775691134/task/blob/master/%E8%BF%9B%E9%98%B6/js%E8%BF%9B%E9%98%B6/JQuery/demo1.html)
+
+---
+
+#### 10.效果：
+- [预览地址](https://a775691134.github.io/task/进阶/js进阶/JQuery/demo3.html)
+- [代码地址](https://github.com/a775691134/task/blob/master/%E8%BF%9B%E9%98%B6/js%E8%BF%9B%E9%98%B6/JQuery/demo1.html)
+
+---
+
+#### 11.效果：
+- [预览地址](https://a775691134.github.io/task/进阶/js进阶/JQuery/demo4.html)
+- [代码地址](https://github.com/a775691134/task/blob/master/%E8%BF%9B%E9%98%B6/js%E8%BF%9B%E9%98%B6/JQuery/demo1.html)
+
+---
