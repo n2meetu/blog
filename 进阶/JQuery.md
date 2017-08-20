@@ -61,7 +61,7 @@
     - 事件代理
         ```
         <script>
-            $('ul').on("click",li,function(){
+            $('ul').on("click",'li',function(){
                 /*...*/
             })
         </script>
@@ -69,7 +69,7 @@
     - 为事件命名
         ```
         <script>
-            $('ul').on("click.name",li,function(){
+            $('ul').on("click.name",'li',function(){
                 /*...*/
             })
         </script>

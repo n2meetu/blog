@@ -69,6 +69,10 @@
 
 [跨域解决方式](https://github.com/a775691134/blog/blob/master/进阶/跨域解决方式.md)
 
+[JQuery基础](https://github.com/a775691134/blog/blob/master/进阶/JQuery.md)
+
+[JQuery动画](https://github.com/a775691134/blog/blob/master/进阶/JQuery动画.md)
+
 
 
 
