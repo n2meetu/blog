@@ -241,7 +241,14 @@
     <script src="./jquery-3.2.1.min.js"></script>
     <script>
         $('a').on('click',function(){
-            $(this).css('background-color','red').css('background-color','blue')
+            $(this)).css({
+                    'background': 'red'
+                })
+            setTimeout(function() {
+                $(this)).css({
+                    'background': 'blue'
+                })
+            }, 1000)
         })
     </script>
     ```
@@ -269,16 +276,13 @@
     <div></div>
     <script src="./jquery-3.2.1.min.js"></script>
     <script>
-        // $('a').on('click',function(){
-        //     $(this).css('background-color','red').css('background-color','blue')
-        //     console.log($(window).scrollTop())
-        // })
         $('div').on('mousemove',function(){
             $(this).css('background-color','red')
         })
         $('div').on('mouseleave',function(){
             $(this).css('background-color','white')
         })
+    </script>
     ```
 
 - 当鼠标激活 `input `输入框时让输入框边框变为蓝色，当输入框内容改变时把输入框里的文字小写变- 为大写，当输入框失去焦点时去掉边框蓝色，控制台展示输入框里的文字
@@ -303,8 +307,8 @@
     </select>    
     <script>
         $('#sex').on('change',function(){
-            var selectValue= $(this).val() //获取传入的值
-            console.log($(this).find('option:selected').text())   //获取用户选择的内容
+            var selectValue= $(this).val() /*获取传入的值*/
+            console.log($(this).find('option:selected').text())   /*获取用户选择的内容*/
         })
     </script>
     ```
