@@ -318,7 +318,6 @@
 #### 8： 用 jQuery ajax 实现如下效果。`当点击加载更多会加载数据展示到页面效果预览364
 前台代码：
 
-    ```
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -380,10 +379,8 @@
     </body>
     </html>
 
-    ```
 后台代码：
 
-    ```
     router.get('/getInfo', function(req, res) {
     var length = req.query.len
     console.log(length)
@@ -395,7 +392,7 @@
     res.send(JSON.stringify(data))
     })
 
-    ```
+
 
 
 ---
