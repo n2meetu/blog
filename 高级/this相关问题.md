@@ -190,20 +190,51 @@ p.sayName();
 #### 9：对String做扩展，实现如下方式获取字符串中频率最高的字符
 ```
 var str = 'ahbbccdeddddfg';
+str.__proto__.getMostOften = function (){
+    var obj = {}
+    var max=0
+    for(var i=0;i<str.length;i++){
+        if( obj.hasOwnProperty( str[i] ) ){
+            obj[str[i]]++
+            if(obj[str[i]]>max){
+                max = obj[str[i]]
+            }
+        }else {
+            obj[str[i]]=1
+        }
+    }
+    for(var key in obj){
+        if(max === obj[key]){
+            return key
+        }
+    }
+}
 var ch = str.getMostOften();
 console.log(ch); //d , 因为d 出现了5次
 ```
 
 #### 10： instanceOf有什么作用？内部逻辑是如何实现的？
-- 作用
+- 作用 判断一个对象是不是某个类型的实例
 
-- 内部实现
+- 内部实现 
+    ```
+    function instance(param,leixing){
+        while(param.__proto__){
+            if(param.__proto__.constructor === leixing){
+                return true
+            }else {
+                param = param.__proto__
+            }
+        }
+        return false
+    }
+    ```
 
 
 ## 继承相关问题
 
 #### 11：继承有什么作用?
-- 作用
+- 作用:可以让一个对象直接使用另一对象的属性和方法。
 
 ---
 
@@ -231,21 +262,47 @@ Person.prototype.printName = function(){
 var p1 = new Person('若愚', 27);
 ```
 
-- 区别
+- 区别 
+    - 方法1是将`printName`方法挂载到每个实例上面，方法2是将`printName`写在People的`prototype`上面，也就是对象的`__proto__`里面
+    - 方法1的好处是每一个对象都有一个相同的独立的方法，对象的方法怎么变都不会影响到其他对象。
+    - 方法1的坏处是每一个对象都要占据很多的内存
+    - 方法2的好处是每一个对象都使用同一个方法，每个对象只拥有自己的属性，避免了内存的浪费
 
 ---
 
 #### 13： Object.create 有什么作用？兼容性如何？
-- 作用
+- 作用 将一个类的`prototype`从clone到另外一个类上，使用时应该先克隆然后在子类上添加方法，最后在将这个类的`prototype.constructor`的值设置成这个类
 
-- 兼容性
+- 兼容性 
+    - chrome: 5
+    - Firefox: 4.0
+    - IE: 9
+    - Opera: 11.60
+    - Safari: 5
 
 ---
 
 #### 14： hasOwnProperty有什么作用？ 如何使用？
-- 作用
+- 作用 
+    - 判断某个是自己的还是父类的
+    - 判断一个对象是否包含自定义属性而不是原型链上的属性
 
 - 使用
+    ```
+    function Person(name,age){
+        this.name = name 
+        this.age = age
+    }
+    Person.prototype.language = 'Chinese'
+
+    var p1 = new Person('Haoran',23)
+    ```
+    - 代码中name,age是p1的属性，而language是Person的每一个实例化的对象都有的属性，如果我们使用`hasOwnProperty`判断，结果应该是name和age返回true，language是在p1的原型链上面的，不是p1的属性，应该返回false
+    ```
+    console.log(p1.hasOwnProperty('name')) //true
+    console.log(p1.hasOwnProperty('age'))  //true
+    console.log(p1.hasOwnProperty('language'))  //false
+    ```
 
 ---
 
@@ -260,27 +317,37 @@ function Male(name, sex, age){
     this.age = age;
 }
 ```
-- 作用
+- 作用 使用Person中的赋值语句为当前环境赋值
 
 ---
 
 #### 16： 补全代码，实现继承 
 ```
 function Person(name, sex){
-    // todo ...
+    this.name = name
+    this.sex = sex
 }
 
 Person.prototype.getName = function(){
-    // todo ...
-};    
-
-function Male(name, sex, age){
-   //todo ...
+    return this.name
+}
+Person.prototype.printName = function(){
+    console.log(this.name)
 }
 
-//todo ...
+function Male(name, sex, age){
+    this.name = name
+    this.sex = sex
+    this.age = age
+}
+
+/*继承的代码*/
+Male.prototype = Object.create(Person.prototype)
+Male.prototype.constructor = Male
+
+
 Male.prototype.getAge = function(){
-    //todo ...
+    return this.age
 };
 
 var ruoyu = new Male('若愚', '男', 27);
