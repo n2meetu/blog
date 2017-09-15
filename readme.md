@@ -87,6 +87,8 @@
 
 [npm相关问题](https://github.com/a775691134/blog/blob/master/高级/npm相关问题.md)
 
+[前端常见设计模式](https://github.com/a775691134/blog/blob/master/高级/前端常见设计模式.md)
+
 
 
 ---
