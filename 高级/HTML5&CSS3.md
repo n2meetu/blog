@@ -18,7 +18,9 @@
         - `nav` 导航
         - `section` 定义文档中的节（section、区段）
 - 兼容老IE
-    - 
+    - 使用js创建元素
+    - 使用html5-els.js
+    - 使用html5shiv.js
 
 ## 2： input 有哪些新增类型？
 - `email`,`url`,`number`,`range`,`Date Picker`,`Date`
