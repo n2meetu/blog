@@ -58,8 +58,9 @@
 
 [DOM操作](https://github.com/a775691134/blog/blob/master/进阶/DOM操作.md)
 
-
 [事件](https://github.com/a775691134/blog/blob/master/进阶/事件.md)
+
+[事件2](https://github.com/a775691134/blog/blob/master/进阶/事件2.md)
 
 [闭包](https://github.com/a775691134/blog/blob/master/进阶/闭包.md)
 
